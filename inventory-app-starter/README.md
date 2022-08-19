@@ -1,6 +1,8 @@
-# Room을 사용하여 데이터 유지
+# Room을 사용한 인벤토리 앱 개발
 
-https://developer.android.com/codelabs/basic-android-kotlin-training-persisting-data-room
+1. https://developer.android.com/codelabs/basic-android-kotlin-training-persisting-data-room
+
+2. https://developer.android.com/codelabs/basic-android-kotlin-training-update-data-room
 
 Starter code for Android Basics in Kotlin.
 

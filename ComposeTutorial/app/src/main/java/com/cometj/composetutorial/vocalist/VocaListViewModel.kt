@@ -14,8 +14,11 @@ class VocaListViewModel : ViewModel() {
     val vocabularies: List<Vocabulary>
         get() = _vocabularies
 
-    fun searchVocasByWord(searchText: String): List<Vocabulary> {
-        _searchText.value = searchText
+    fun onSearchTextChanged(newText: String) {
+        _searchText.value = newText
+    }
+
+    fun searchVocaByWord(searchText: String): List<Vocabulary> {
         return _vocabularies.filter { voca -> searchText in voca.word }
     }
 }

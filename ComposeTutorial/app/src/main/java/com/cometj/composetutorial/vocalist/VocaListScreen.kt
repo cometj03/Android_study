@@ -22,11 +22,13 @@ fun VocaListScreen(
     ) {
         SearchTextField(
             text = vocaListViewModel.searchText,
-            onValueChange = {
-                vocaListViewModel.searchVocasByWord(it)
-            }
+            onValueChange = { vocaListViewModel.onSearchTextChanged(it) }
         )
-        VocabularyList(list = vocaListViewModel.vocabularies)
+        VocabularyList(
+            searchText = vocaListViewModel.searchText,
+            list = vocaListViewModel.vocabularies,
+            onSearchList = { vocaListViewModel.searchVocaByWord(it) }
+        )
     }
 }
 

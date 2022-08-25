@@ -14,6 +14,7 @@ import androidx.compose.runtime.*
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 data class WellnessTask(
@@ -71,3 +72,12 @@ fun WellnessTaskItem(
     }
 }
 
+@Preview(showBackground = true)
+@Composable
+fun prev() {
+    WellnessTaskItem(
+        taskName = "task",
+        checked = false,
+        onCheckedChange = {},
+        onClose = { /*TODO*/ })
+}
